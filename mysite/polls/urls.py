@@ -2,6 +2,9 @@ from django.urls import path
 
 from . import views
 
+#アプリの名前空間を指定{% url 'polls:detail}みたいにやるのに必要
+app_name='polls'
+
 urlpatterns = [
     #name引数のおかげで.htmlファイルに検索をかけることができる
     #views.index→このアプリの中のview.pyのindex関数を指定している
